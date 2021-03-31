@@ -1,0 +1,170 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "defaultDescription",
+    "version" : "0.1",
+    "title" : "defaultTitle"
+  },
+  "paths" : {
+    "/api/v1/food/" : {
+      "get" : {
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model6"
+            }
+          }
+        }
+      },
+      "post" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/Model1"
+          },
+          "x-examples" : {
+            "application/json" : "{\r\n    \"name\": \"mansaf\"\r\n}"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model3"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/food/60646ef1e848e31830e78df1" : {
+      "put" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/Model0"
+          },
+          "x-examples" : {
+            "application/json" : "{\r\n    \"name\": \"maqlooba\"\r\n}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model5"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Model0" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Model1" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Model2" : {
+      "properties" : {
+        "_id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "__v" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Model3" : {
+      "properties" : {
+        "_id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "__v" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Array" : {
+      "properties" : {
+        "_id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "__v" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Model4" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/definitions/Array"
+      }
+    },
+    "Model5" : {
+      "properties" : {
+        "_id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "__v" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Model6_Array" : {
+      "properties" : {
+        "_id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "__v" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Model6" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/definitions/Model6_Array"
+      }
+    }
+  }
+}
